@@ -1,63 +1,117 @@
+    
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Card</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f0f0f0;
-      font-family: Arial, sans-serif;
-    }
-    .cv-card {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      padding: 30px;
-      width: 300px;
-      text-align: center;
-    }
-    .cv-card img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-    }
-    .cv-card h2 {
-      margin: 10px 0 5px;
-    }
-    .cv-card p {
-      color: gray;
-      margin: 5px 0 15px;
-    }
-    .cv-card a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #007bff;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .cv-card a:hover {
-      background: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katharina Krehan-Bastian CV Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cv-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .cv-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007bff, #00d4ff);
+            padding: 30px 20px;
+            color: #ffffff;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .content p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin: 5px 0;
+        }
+
+        .content .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 15px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        @media (max-width: 400px) {
+            .cv-card {
+                width: 90%;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .content h2 {
+                font-size: 16px;
+            }
+
+            .content p {
+                font-size: 13px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<div class="cv-card">
-  <img src="https://via.placeholder.com/100" alt="Profilbild">
-  <h2>Max Mustermann</h2>
-  <p>Webentwickler</p>
-  <p>max.mustermann@email.de</p>
-  <a href="#">Lebenslauf herunterladen</a>
-</div>
-
+    <div class="cv-card">
+        <div class="header">
+            <h1>Katharina Krehan-Bastian</h1>
+        </div>
+        <div class="content">
+            <h2>Healthcare Manager</h2>
+            <p>Master of Arts Healthcare Management</p>
+            <p>Bachelor of Science Health Sciences</p>
+            <p>Consultant for Digital Healthcare</p>
+            <p class="highlight">15 Years of Experience in Elderly Care</p>
+        </div>
+        <div class="footer">
+            <p>Driving Innovation in Healthcare</p>
+        </div>
+    </div>
 </body>
 </html>
