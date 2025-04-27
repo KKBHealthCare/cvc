@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Card</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .cv-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+    }
+    .cv-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .cv-card h2 {
+      margin: 10px 0 5px;
+    }
+    .cv-card p {
+      color: gray;
+      margin: 5px 0 15px;
+    }
+    .cv-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .cv-card a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-card">
+  <img src="https://via.placeholder.com/100" alt="Profilbild">
+  <h2>Max Mustermann</h2>
+  <p>Webentwickler</p>
+  <p>max.mustermann@email.de</p>
+  <a href="#">Lebenslauf herunterladen</a>
+</div>
+
+</body>
+</html>
